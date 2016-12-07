@@ -1,0 +1,64 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "leti-R Wiki page\n\n\nThis wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!\n\n\n\n\nMkDocs\n\n\nThe goal was to find an easy tool that can be customized and can work with markdown documents. \nMkDocs\n provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their \ngithub repository\n, so it may be that what I have found unsatisfying thus far has already been addressed.\n\n\n\n\nTagging in documents\n\n\nThe search function provided by MkDocs does not allow for strict searches (\ne.g.\n \"ggplot2\"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:\n\n\nTags\n\n\n_K\u00e9vin;\n_Steve;\n_Nicolas\n\n\n\n\nUseful links for MkDocs\n\n\nMkDocs\n - Overview and installation\n\n\nsitepoint\n - Building and deploying product documentation with MkDocs\n\n\nEmbedded Log\n- Automatic update of MkDocs from github wiki with python script\n\n\n\n\nUseful links for Markdown\n\n\n\n\n\nMarkdown cheat sheet", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#leti-r-wiki-page", 
+            "text": "This wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!", 
+            "title": "leti-R Wiki page"
+        }, 
+        {
+            "location": "/#mkdocs", 
+            "text": "The goal was to find an easy tool that can be customized and can work with markdown documents.  MkDocs  provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their  github repository , so it may be that what I have found unsatisfying thus far has already been addressed.", 
+            "title": "MkDocs"
+        }, 
+        {
+            "location": "/#tagging-in-documents", 
+            "text": "The search function provided by MkDocs does not allow for strict searches ( e.g.  \"ggplot2\"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:", 
+            "title": "Tagging in documents"
+        }, 
+        {
+            "location": "/#tags", 
+            "text": "_K\u00e9vin;\n_Steve;\n_Nicolas", 
+            "title": "Tags"
+        }, 
+        {
+            "location": "/#useful-links-for-mkdocs", 
+            "text": "MkDocs  - Overview and installation  sitepoint  - Building and deploying product documentation with MkDocs  Embedded Log - Automatic update of MkDocs from github wiki with python script", 
+            "title": "Useful links for MkDocs"
+        }, 
+        {
+            "location": "/#useful-links-for-markdown", 
+            "text": "Markdown cheat sheet", 
+            "title": "Useful links for Markdown"
+        }, 
+        {
+            "location": "/test_page/", 
+            "text": "Reference\n\n\n\n\nTags\n\n\n\n\n\n\n\nNotes\n\n\n\n\nCitations", 
+            "title": "Test"
+        }, 
+        {
+            "location": "/test_page/#reference", 
+            "text": "", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/test_page/#tags", 
+            "text": "", 
+            "title": "Tags"
+        }, 
+        {
+            "location": "/test_page/#notes", 
+            "text": "", 
+            "title": "Notes"
+        }, 
+        {
+            "location": "/test_page/#citations", 
+            "text": "", 
+            "title": "Citations"
+        }
+    ]
+}
