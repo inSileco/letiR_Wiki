@@ -18,7 +18,15 @@ The search function provided by MkDocs does not allow for strict searches (*e.g.
 \_Nicolas
 
 -----------------------------------
-### Deploy wiki after modifications
+### Useful commands
+
+#### Local visualization
+
+Use the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000
+
+> mkdocs serve
+
+#### Deploying online
 Use the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet
 
 > mkdocs gh-deploy --clean
@@ -38,4 +46,4 @@ Use the following command to push modifications to gh-pages branch after modific
 <!-- That's mostly for David! -->
 [Markdown cheat sheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
 
-Kévin Cazelle's [repository](https://github.com/KevCaz/Rmarkdowndocfr) on R markdown in french
+KÃ©vin Cazelle's [repository](https://github.com/KevCaz/Rmarkdowndocfr) on R markdown in french
