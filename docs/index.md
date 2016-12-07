@@ -37,3 +37,5 @@ Use the following command to push modifications to gh-pages branch after modific
 
 <!-- That's mostly for David! -->
 [Markdown cheat sheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
+
+Kévin Cazelle's [repository](https://github.com/KevCaz/Rmarkdowndocfr) on R markdown in french
