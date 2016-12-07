@@ -17,6 +17,11 @@ The search function provided by MkDocs does not allow for strict searches (*e.g.
 \_Steve;
 \_Nicolas
 
+-----------------------------------
+### Deploy wiki after modifications
+Use the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet
+
+> mkdocs gh-deploy --clean
 
 ---------------------------
 ### Useful links for MkDocs
@@ -24,7 +29,6 @@ The search function provided by MkDocs does not allow for strict searches (*e.g.
 [MkDocs](http://www.mkdocs.org/) - Overview and installation
 
 [sitepoint](https://www.sitepoint.com/building-product-documentation-mkdocs/) - Building and deploying product documentation with MkDocs
-
 
 [Embedded Log](http://www.embeddedlog.com/static-docs-from-github-wiki.html)- Automatic update of MkDocs from github wiki with python script
 
