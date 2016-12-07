@@ -1,10 +1,10 @@
 site_name: leti-R Wiki
-site_url:
+site_url: http://letir.github.io/letir_wiki/
 site_description: Documentation on everything
 site_author: leti-R
 theme_dir: cinder
 docs_dir: docs
-repo_url:
+repo_url: https://github.com/letiR/letiR_Wiki
 copyright: Copyright &copy; 2016 <a href="https://github.com/orgs/letiR">letiR team</a>
 google_analytics:
 
