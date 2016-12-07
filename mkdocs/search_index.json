@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "leti-R Wiki page\n\n\nThis wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!\n\n\n\n\nMkDocs\n\n\nThe goal was to find an easy tool that can be customized and can work with markdown documents. \nMkDocs\n provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their \ngithub repository\n, so it may be that what I have found unsatisfying thus far has already been addressed.\n\n\n\n\nTagging in documents\n\n\nThe search function provided by MkDocs does not allow for strict searches (\ne.g.\n \"ggplot2\"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:\n\n\nTags\n\n\n_K\u00e9vin;\n_Steve;\n_Nicolas\n\n\n\n\nDeploy wiki after modifications\n\n\nUse the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet\n\n\n\n\nmkdocs gh-deploy --clean\n\n\n\n\n\n\nUseful links for MkDocs\n\n\nMkDocs\n - Overview and installation\n\n\nsitepoint\n - Building and deploying product documentation with MkDocs\n\n\nEmbedded Log\n- Automatic update of MkDocs from github wiki with python script\n\n\n\n\nUseful links for Markdown\n\n\n\n\n\nMarkdown cheat sheet", 
+            "text": "leti-R Wiki page\n\n\nThis wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!\n\n\n\n\nMkDocs\n\n\nThe goal was to find an easy tool that can be customized and can work with markdown documents. \nMkDocs\n provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their \ngithub repository\n, so it may be that what I have found unsatisfying thus far has already been addressed.\n\n\n\n\nTagging in documents\n\n\nThe search function provided by MkDocs does not allow for strict searches (\ne.g.\n \"ggplot2\"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:\n\n\nTags\n\n\n_K\u00e9vin;\n_Steve;\n_Nicolas\n\n\n\n\nUseful commands\n\n\nLocal visualization\n\n\nUse the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000\n\n\n\n\nmkdocs serve\n\n\n\n\nDeploying online\n\n\nUse the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet\n\n\n\n\nmkdocs gh-deploy --clean\n\n\n\n\n\n\nUseful links for MkDocs\n\n\nMkDocs\n - Overview and installation\n\n\nsitepoint\n - Building and deploying product documentation with MkDocs\n\n\nEmbedded Log\n- Automatic update of MkDocs from github wiki with python script\n\n\n\n\nUseful links for Markdown\n\n\n\n\n\nMarkdown cheat sheet\n\n\nK\u00e9vin Cazelle's \nrepository\n on R markdown in french", 
             "title": "Home"
         }, 
         {
@@ -26,9 +26,19 @@
             "title": "Tags"
         }, 
         {
-            "location": "/#deploy-wiki-after-modifications", 
+            "location": "/#useful-commands", 
+            "text": "", 
+            "title": "Useful commands"
+        }, 
+        {
+            "location": "/#local-visualization", 
+            "text": "Use the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000   mkdocs serve", 
+            "title": "Local visualization"
+        }, 
+        {
+            "location": "/#deploying-online", 
             "text": "Use the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet   mkdocs gh-deploy --clean", 
-            "title": "Deploy wiki after modifications"
+            "title": "Deploying online"
         }, 
         {
             "location": "/#useful-links-for-mkdocs", 
@@ -37,7 +47,7 @@
         }, 
         {
             "location": "/#useful-links-for-markdown", 
-            "text": "Markdown cheat sheet", 
+            "text": "Markdown cheat sheet  K\u00e9vin Cazelle's  repository  on R markdown in french", 
             "title": "Useful links for Markdown"
         }, 
         {
