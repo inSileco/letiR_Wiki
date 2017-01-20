@@ -15,4 +15,5 @@ google_analytics:
 
 pages:
 - Home: index.md
+- Rnotes: Rnotes.md
 - Test: test_page.md

@@ -7,6 +7,16 @@ This wiki is an attempt at structuring our research efforts in as structure-free
 
 The goal was to find an easy tool that can be customized and can work with markdown documents. [MkDocs](http://www.mkdocs.org/) provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their [github repository](https://github.com/mkdocs/mkdocs/), so it may be that what I have found unsatisfying thus far has already been addressed.
 
+### Installation
+
+Everuthing is clearly explain on the [MkDocs](http://www.mkdocs.org/) website,
+
+For [homebrew](brew install mkdocs) users:
+
+```bash
+brew install mkdocs
+```
+
 ------------------------
 ### Tagging in documents
 
@@ -24,12 +34,16 @@ The search function provided by MkDocs does not allow for strict searches (*e.g.
 
 Use the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000
 
-> mkdocs serve
+```bash
+mkdocs serve
+```
 
 #### Deploying online
 Use the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet
 
-> mkdocs gh-deploy --clean
+```bash
+mkdocs gh-deploy --clean
+```
 
 ---------------------------
 ### Useful links for MkDocs
