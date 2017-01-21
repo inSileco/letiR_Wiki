@@ -74,6 +74,12 @@
                 
                 
                     <li >
+                        <a href="Rnotes/">Rnotes</a>
+                    </li>
+                
+                
+                
+                    <li >
                         <a href="test_page/">Test</a>
                     </li>
                 
@@ -94,7 +100,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="test_page/">
+                        <a rel="prev" href="Rnotes/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -122,6 +128,9 @@
         <li class="first-level active"><a href="#leti-r-wiki-page">leti-R Wiki page</a></li>
         
             <li class="second-level"><a href="#mkdocs">MkDocs</a></li>
+            
+        
+            <li class="second-level"><a href="#installation">Installation</a></li>
             
         
             <li class="second-level"><a href="#tagging-in-documents">Tagging in documents</a></li>
@@ -152,6 +161,12 @@
 <hr />
 <h3 id="mkdocs">MkDocs</h3>
 <p>The goal was to find an easy tool that can be customized and can work with markdown documents. <a href="http://www.mkdocs.org/">MkDocs</a> provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their <a href="https://github.com/mkdocs/mkdocs/">github repository</a>, so it may be that what I have found unsatisfying thus far has already been addressed.</p>
+<h3 id="installation">Installation</h3>
+<p>Everuthing is clearly explain on the <a href="http://www.mkdocs.org/">MkDocs</a> website,</p>
+<p>For <a href="./brew install mkdocs">homebrew</a> users:</p>
+<pre><code class="bash">brew install mkdocs
+</code></pre>
+
 <hr />
 <h3 id="tagging-in-documents">Tagging in documents</h3>
 <p>The search function provided by MkDocs does not allow for strict searches (<em>e.g.</em> "ggplot2"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:</p>
@@ -163,14 +178,14 @@ _Nicolas</p>
 <h3 id="useful-commands">Useful commands</h3>
 <h4 id="local-visualization">Local visualization</h4>
 <p>Use the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000</p>
-<blockquote>
-<p>mkdocs serve</p>
-</blockquote>
+<pre><code class="bash">mkdocs serve
+</code></pre>
+
 <h4 id="deploying-online">Deploying online</h4>
 <p>Use the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet</p>
-<blockquote>
-<p>mkdocs gh-deploy --clean</p>
-</blockquote>
+<pre><code class="bash">mkdocs gh-deploy --clean
+</code></pre>
+
 <hr />
 <h3 id="useful-links-for-mkdocs">Useful links for MkDocs</h3>
 <p><a href="http://www.mkdocs.org/">MkDocs</a> - Overview and installation</p>
@@ -235,6 +250,6 @@ _Nicolas</p>
 </html>
 
 <!--
-MkDocs version : 0.16.0
-Build Date UTC : 2016-12-07 16:56:50
+MkDocs version : 0.16.1
+Build Date UTC : 2017-01-21 08:22:58
 -->
