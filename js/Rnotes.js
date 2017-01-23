@@ -29,14 +29,15 @@ var uscateg = ucateg.sort();
 document.getElementById('myDiv').innerHTML += "<br/>"
 
 for (var i=0; i<uscateg.length; i++){
-  document.getElementById('myDiv').innerHTML += "<h3>" + uscateg[i] + "</h3>" + "<hr>";
+  document.getElementById('myDiv').innerHTML += "<h3>"
+  + uscateg[i] + "</h3>" + "<hr>" + "<ol>";
   for (var j=0; j<post.length; j++){
     if (post[j].category === uscateg[i]){
-      document.getElementById('myDiv').innerHTML += "<b><a href=" + post[i].url + ">"
-      + post[i].title + "</b></a>"
-      + " <i>" + post[i].date + "</i> "
-      + post[i].description;
+      document.getElementById('myDiv').innerHTML += "<li>"+ "<b><a href=" + post[j].url + ">"
+      + post[j].title + "</b></a>"
+      + " <i>" + post[j].date + "</i> "
+      + post[j].description + "</li>";
     }
   }
-  document.getElementById('myDiv').innerHTML += "<br/><br/>"
+  document.getElementById('myDiv').innerHTML += "</ol><br/>";
 }
