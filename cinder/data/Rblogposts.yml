@@ -23,17 +23,14 @@
     - "class R6"
 
 
-- title: A second Simple Guide to S3 Method
-  date: 06-11-2016
-  description: "Few notes about S3 class in R"
-  url: http://www.njtierney.com/r/missing%20data/rbloggers/2016/11/06/simple-s3-methods/
-  category: "For developpers"
+- title: The Wordcloud2 library
+  date: 04-12-2016
+  description: "How to do Wordcloud using R"
+  url: http://www.r-graph-gallery.com/2016/12/09/the-wordcloud2-library/
+  category: "Data visualization"
   keywords:
-    - "class S3"
-    - tutorial
+    - "wordcloud"
   seealso:
-    - "class S4"
-    - "class R6"
 
 
 
