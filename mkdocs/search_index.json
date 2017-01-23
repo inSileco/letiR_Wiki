@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "leti-R Wiki page\n\n\nThis wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!\n\n\n\n\nMkDocs\n\n\nThe goal was to find an easy tool that can be customized and can work with markdown documents. \nMkDocs\n provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their \ngithub repository\n, so it may be that what I have found unsatisfying thus far has already been addressed.\n\n\nInstallation\n\n\nEveruthing is clearly explain on the \nMkDocs\n website,\n\n\nFor \nhomebrew\n users:\n\n\nbrew install mkdocs\n\n\n\n\n\n\nTagging in documents\n\n\nThe search function provided by MkDocs does not allow for strict searches (\ne.g.\n \"ggplot2\"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:\n\n\nTags\n\n\n_K\u00e9vin;\n_Steve;\n_Nicolas\n\n\n\n\nUseful commands\n\n\nLocal visualization\n\n\nUse the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000\n\n\nmkdocs serve\n\n\n\n\nDeploying online\n\n\nUse the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet\n\n\nmkdocs gh-deploy --clean\n\n\n\n\n\n\nUseful links for MkDocs\n\n\nMkDocs\n - Overview and installation\n\n\nsitepoint\n - Building and deploying product documentation with MkDocs\n\n\nEmbedded Log\n- Automatic update of MkDocs from github wiki with python script\n\n\n\n\nUseful links for Markdown\n\n\n\n\n\nMarkdown cheat sheet\n\n\nK\u00e9vin Cazelle's \nrepository\n on R markdown in french", 
+            "text": "leti-R Wiki page\n\n\nThis wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!\n\n\n\n\nMkDocs\n\n\nThe goal was to find an easy tool that can be customized and can work with markdown documents. \nMkDocs\n provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their \ngithub repository\n, so it may be that what I have found unsatisfying thus far has already been addressed.\n\n\nInstallation\n\n\nFor \nhomebrew\n users:\n\n\nbrew install mkdocs\n\n\n\n\nFor further details, you may visit the \nMkDocs\n website.\n\n\n\n\nTagging in documents\n\n\nThe search function provided by MkDocs does not allow for strict searches (\ne.g.\n \"ggplot2\"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:\n\n\nTags\n\n\n_K\u00e9vin;\n_Steve;\n_Nicolas\n\n\n\n\nUseful commands\n\n\nLocal visualization\n\n\nUse the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000\n\n\nmkdocs serve\n\n\n\n\nDeploying online\n\n\nUse the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet\n\n\nmkdocs gh-deploy --clean\n\n\n\n\nAdding css files / javascript library\n\n\nTo add \n.css\n and  \n.js\n files, follow the steps described \nhere\n. Once done,\nyou will need to rebuild to website:\n\n\nmkdocs build --clean\n\n\n\n\n\n\n\n\n\nUseful links for MkDocs\n\n\nMkDocs\n - Overview and installation\n\n\nsitepoint\n - Building and deploying product documentation with MkDocs\n\n\nEmbedded Log\n- Automatic update of MkDocs from github wiki with python script\n\n\n\n\nUseful links for Markdown\n\n\n\n\n\nMarkdown cheat sheet\n\n\nK\u00e9vin Cazelle's \nrepository\n on R markdown in french.", 
             "title": "Home"
         }, 
         {
@@ -17,7 +17,7 @@
         }, 
         {
             "location": "/#installation", 
-            "text": "Everuthing is clearly explain on the  MkDocs  website,  For  homebrew  users:  brew install mkdocs", 
+            "text": "For  homebrew  users:  brew install mkdocs  For further details, you may visit the  MkDocs  website.", 
             "title": "Installation"
         }, 
         {
@@ -46,23 +46,28 @@
             "title": "Deploying online"
         }, 
         {
+            "location": "/#adding-css-files-javascript-library", 
+            "text": "To add  .css  and   .js  files, follow the steps described  here . Once done,\nyou will need to rebuild to website:  mkdocs build --clean", 
+            "title": "Adding css files / javascript library"
+        }, 
+        {
             "location": "/#useful-links-for-mkdocs", 
             "text": "MkDocs  - Overview and installation  sitepoint  - Building and deploying product documentation with MkDocs  Embedded Log - Automatic update of MkDocs from github wiki with python script", 
             "title": "Useful links for MkDocs"
         }, 
         {
             "location": "/#useful-links-for-markdown", 
-            "text": "Markdown cheat sheet  K\u00e9vin Cazelle's  repository  on R markdown in french", 
+            "text": "Markdown cheat sheet  K\u00e9vin Cazelle's  repository  on R markdown in french.", 
             "title": "Useful links for Markdown"
         }, 
         {
             "location": "/Rnotes/", 
-            "text": "R notes\n\n\nThis is a page where some helpful R resources are indexed.", 
+            "text": "R notes\n\n\nThis is a page where some helpful R resources are indexed.\nIt is a actually a selection of blogposts mainly found via the R-bloggers (a blog hub) mailing list.\n\n\n\n\n\n\n\n\n  var post = YAML.load(\"../data/Rblogposts.yml\");\n  for (var i=0; i<post.length; i++){\n    document.getElementById('myDiv').innerHTML += \"<h3>\" + post[i].category + \"</h3>\"\n    + \"<hr>\"\n    + \"<b><a href=\" + post[i].url + \">\"\n    + post[i].title + \"</b></a>\"\n    + \" <i>\" + post[i].date + \"</i> \"\n    + post[i].description;\n  }", 
             "title": "Rnotes"
         }, 
         {
             "location": "/Rnotes/#r-notes", 
-            "text": "This is a page where some helpful R resources are indexed.", 
+            "text": "This is a page where some helpful R resources are indexed.\nIt is a actually a selection of blogposts mainly found via the R-bloggers (a blog hub) mailing list.    \n  var post = YAML.load(\"../data/Rblogposts.yml\");\n  for (var i=0; i<post.length; i++){\n    document.getElementById('myDiv').innerHTML += \"<h3>\" + post[i].category + \"</h3>\"\n    + \"<hr>\"\n    + \"<b><a href=\" + post[i].url + \">\"\n    + post[i].title + \"</b></a>\"\n    + \" <i>\" + post[i].date + \"</i> \"\n    + post[i].description;\n  }", 
             "title": "R notes"
         }, 
         {

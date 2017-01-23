@@ -36,6 +36,11 @@
     </script>
 
     
+
+
+    <!-- KC added -->
+    <script src="../js/yaml.min.js"></script>
+
 </head>
 
 <body>
@@ -132,7 +137,22 @@
         <div class="col-md-9" role="main">
 
 <h2 id="r-notes">R notes</h2>
-<p>This is a page where some helpful R resources are indexed.</p></div>
+<p>This is a page where some helpful R resources are indexed.
+It is a actually a selection of blogposts mainly found via the R-bloggers (a blog hub) mailing list.</p>
+<div id="myDiv">
+</div>
+
+<script>
+  var post = YAML.load("../data/Rblogposts.yml");
+  for (var i=0; i<post.length; i++){
+    document.getElementById('myDiv').innerHTML += "<h3>" + post[i].category + "</h3>"
+    + "<hr>"
+    + "<b><a href=" + post[i].url + ">"
+    + post[i].title + "</b></a>"
+    + " <i>" + post[i].date + "</i> "
+    + post[i].description;
+  }
+</script></div>
         
     </div>
 
@@ -153,6 +173,7 @@
     </script>
     <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
     <script src="../js/base.js"></script>
+    <script src="../js/yaml.min.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">

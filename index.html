@@ -37,6 +37,11 @@
     </script>
 
     
+
+
+    <!-- KC added -->
+    <script src="./js/yaml.min.js"></script>
+
 </head>
 
 <body class="homepage" >
@@ -144,6 +149,8 @@
             
                 <li class="third-level"><a href="#deploying-online">Deploying online</a></li>
             
+                <li class="third-level"><a href="#adding-css-files-javascript-library">Adding css files / javascript library</a></li>
+            
         
             <li class="second-level"><a href="#useful-links-for-mkdocs">Useful links for MkDocs</a></li>
             
@@ -162,11 +169,11 @@
 <h3 id="mkdocs">MkDocs</h3>
 <p>The goal was to find an easy tool that can be customized and can work with markdown documents. <a href="http://www.mkdocs.org/">MkDocs</a> provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their <a href="https://github.com/mkdocs/mkdocs/">github repository</a>, so it may be that what I have found unsatisfying thus far has already been addressed.</p>
 <h3 id="installation">Installation</h3>
-<p>Everuthing is clearly explain on the <a href="http://www.mkdocs.org/">MkDocs</a> website,</p>
 <p>For <a href="./brew install mkdocs">homebrew</a> users:</p>
 <pre><code class="bash">brew install mkdocs
 </code></pre>
 
+<p>For further details, you may visit the <a href="http://www.mkdocs.org/">MkDocs</a> website.</p>
 <hr />
 <h3 id="tagging-in-documents">Tagging in documents</h3>
 <p>The search function provided by MkDocs does not allow for strict searches (<em>e.g.</em> "ggplot2"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:</p>
@@ -186,6 +193,14 @@ _Nicolas</p>
 <pre><code class="bash">mkdocs gh-deploy --clean
 </code></pre>
 
+<h4 id="adding-css-files-javascript-library">Adding css files / javascript library</h4>
+<p>To add <code>.css</code> and  <code>.js</code> files, follow the steps described <a href="http://www.mkdocs.org/user-guide/styling-your-docs/">here</a>. Once done,
+you will need to rebuild to website:</p>
+<pre><code class="bash">mkdocs build --clean
+</code></pre>
+
+<!-- https://www.npmjs.com/package/yamljs -->
+
 <hr />
 <h3 id="useful-links-for-mkdocs">Useful links for MkDocs</h3>
 <p><a href="http://www.mkdocs.org/">MkDocs</a> - Overview and installation</p>
@@ -196,7 +211,7 @@ _Nicolas</p>
 <!-- That's mostly for David! -->
 
 <p><a href="https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf">Markdown cheat sheet</a></p>
-<p>Kévin Cazelle's <a href="https://github.com/KevCaz/Rmarkdowndocfr">repository</a> on R markdown in french</p></div>
+<p>Kévin Cazelle's <a href="https://github.com/KevCaz/Rmarkdowndocfr">repository</a> on R markdown in french.</p></div>
         
     </div>
 
@@ -217,6 +232,7 @@ _Nicolas</p>
     </script>
     <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
     <script src="./js/base.js"></script>
+    <script src="./js/yaml.min.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">
@@ -251,5 +267,5 @@ _Nicolas</p>
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-01-21 08:22:58
+Build Date UTC : 2017-01-23 13:15:19
 -->
