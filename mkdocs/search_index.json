@@ -62,36 +62,36 @@
         }, 
         {
             "location": "/Rnotes/", 
-            "text": "R notes\n\n\nThis is a page where some helpful R resources are indexed.\nIt is a actually a selection of blogposts mainly found via the R-bloggers (a blog hub) mailing list.\n\n\n\n\n\n\n\n\n  var post = YAML.load(\"../data/Rblogposts.yml\");\n  for (var i=0; i<post.length; i++){\n    document.getElementById('myDiv').innerHTML += \"<h3>\" + post[i].category + \"</h3>\"\n    + \"<hr>\"\n    + \"<b><a href=\" + post[i].url + \">\"\n    + post[i].title + \"</b></a>\"\n    + \" <i>\" + post[i].date + \"</i> \"\n    + post[i].description;\n  }", 
-            "title": "Rnotes"
+            "text": "R notes\n\n\nThis is a page where some helpful R resources are indexed.\nIt is a actually a selection of blogposts mainly found via the R-bloggers (a blog hub) mailing list.", 
+            "title": "Useful blog posts"
         }, 
         {
             "location": "/Rnotes/#r-notes", 
-            "text": "This is a page where some helpful R resources are indexed.\nIt is a actually a selection of blogposts mainly found via the R-bloggers (a blog hub) mailing list.    \n  var post = YAML.load(\"../data/Rblogposts.yml\");\n  for (var i=0; i<post.length; i++){\n    document.getElementById('myDiv').innerHTML += \"<h3>\" + post[i].category + \"</h3>\"\n    + \"<hr>\"\n    + \"<b><a href=\" + post[i].url + \">\"\n    + post[i].title + \"</b></a>\"\n    + \" <i>\" + post[i].date + \"</i> \"\n    + post[i].description;\n  }", 
+            "text": "This is a page where some helpful R resources are indexed.\nIt is a actually a selection of blogposts mainly found via the R-bloggers (a blog hub) mailing list.", 
             "title": "R notes"
         }, 
         {
-            "location": "/test_page/", 
+            "location": "/Rgraphpkgs/", 
             "text": "Reference\n\n\n\n\nTags\n\n\n\n\n\n\n\nNotes\n\n\n\n\nCitations", 
-            "title": "Test"
+            "title": "R graph packages"
         }, 
         {
-            "location": "/test_page/#reference", 
+            "location": "/Rgraphpkgs/#reference", 
             "text": "", 
             "title": "Reference"
         }, 
         {
-            "location": "/test_page/#tags", 
+            "location": "/Rgraphpkgs/#tags", 
             "text": "", 
             "title": "Tags"
         }, 
         {
-            "location": "/test_page/#notes", 
+            "location": "/Rgraphpkgs/#notes", 
             "text": "", 
             "title": "Notes"
         }, 
         {
-            "location": "/test_page/#citations", 
+            "location": "/Rgraphpkgs/#citations", 
             "text": "", 
             "title": "Citations"
         }

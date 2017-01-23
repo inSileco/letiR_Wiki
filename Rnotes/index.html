@@ -9,7 +9,7 @@
     <link rel="canonical" href="http://letir.github.io/letir_wiki/Rnotes/"> 
     <link rel="shortcut icon" href="../img/favicon.ico">
 
-    <title>Rnotes - leti-R Wiki</title>
+    <title>Useful blog posts - leti-R Wiki</title>
 
     <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -77,14 +77,23 @@
                 
                 
                 
-                    <li class="active">
-                        <a href="./">Rnotes</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../test_page/">Test</a>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">R notes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Useful blog posts</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Rgraphpkgs/">R graph packages</a>
+</li>
+
+                        
+                        </ul>
                     </li>
                 
                 
@@ -104,7 +113,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../test_page/">
+                        <a rel="prev" href="../Rgraphpkgs/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -140,19 +149,8 @@
 <p>This is a page where some helpful R resources are indexed.
 It is a actually a selection of blogposts mainly found via the R-bloggers (a blog hub) mailing list.</p>
 <div id="myDiv">
-</div>
-
-<script>
-  var post = YAML.load("../data/Rblogposts.yml");
-  for (var i=0; i<post.length; i++){
-    document.getElementById('myDiv').innerHTML += "<h3>" + post[i].category + "</h3>"
-    + "<hr>"
-    + "<b><a href=" + post[i].url + ">"
-    + post[i].title + "</b></a>"
-    + " <i>" + post[i].date + "</i> "
-    + post[i].description;
-  }
-</script></div>
+<!-- div associated to the Rnotes.js -->
+</div></div>
         
     </div>
 
@@ -174,6 +172,7 @@ It is a actually a selection of blogposts mainly found via the R-bloggers (a blo
     <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
     <script src="../js/base.js"></script>
     <script src="../js/yaml.min.js"></script>
+    <script src="../js/Rnotes.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">
