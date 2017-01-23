@@ -7,13 +7,13 @@ docs_dir: docs
 repo_url: https://github.com/letiR/letiR_Wiki
 copyright: Copyright &copy; 2016 <a href="https://github.com/orgs/letiR">letiR team</a>
 google_analytics:
-
 # This portion has the structure of the wiki, with .md documents filed and structured here.
 # There would be a way to automate all of this quite 'easily' with a bash site_description
 # There is also an example on the home page with a python script that automates syncs with
-#   github.
-
+# github.
+extra_javascript:
+    - js/yaml.min.js
 pages:
-- Home: index.md
-- Rnotes: Rnotes.md
-- Test: test_page.md
+  - Home: index.md
+  - Rnotes: Rnotes.md
+  - Test: test_page.md

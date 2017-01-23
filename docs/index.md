@@ -9,13 +9,15 @@ The goal was to find an easy tool that can be customized and can work with markd
 
 ### Installation
 
-Everuthing is clearly explain on the [MkDocs](http://www.mkdocs.org/) website,
-
 For [homebrew](brew install mkdocs) users:
 
 ```bash
 brew install mkdocs
 ```
+
+For further details, you may visit the [MkDocs](http://www.mkdocs.org/) website.
+
+
 
 ------------------------
 ### Tagging in documents
@@ -45,6 +47,17 @@ Use the following command to push modifications to gh-pages branch after modific
 mkdocs gh-deploy --clean
 ```
 
+#### Adding css files / javascript library
+
+To add `.css` and  `.js` files, follow the steps described [here](http://www.mkdocs.org/user-guide/styling-your-docs/). Once done,
+you will need to rebuild to website:
+
+```bash
+mkdocs build --clean
+```
+
+<!-- https://www.npmjs.com/package/yamljs -->
+
 ---------------------------
 ### Useful links for MkDocs
 
@@ -60,4 +73,4 @@ mkdocs gh-deploy --clean
 <!-- That's mostly for David! -->
 [Markdown cheat sheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
 
-Kévin Cazelle's [repository](https://github.com/KevCaz/Rmarkdowndocfr) on R markdown in french
+Kévin Cazelle's [repository](https://github.com/KevCaz/Rmarkdowndocfr) on R markdown in french.
