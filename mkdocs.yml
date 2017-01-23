@@ -13,7 +13,9 @@ google_analytics:
 # github.
 extra_javascript:
     - js/yaml.min.js
+    - js/Rnotes.js
 pages:
   - Home: index.md
-  - Rnotes: Rnotes.md
-  - Test: test_page.md
+  - R notes:
+      - Useful blog posts: Rnotes.md
+      - R graph packages: Rgraphpkgs.md
