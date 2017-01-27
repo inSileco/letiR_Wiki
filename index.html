@@ -14,7 +14,6 @@
 
     <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
     <!-- KC: -->
-    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="./css/font-awesome.min.css" rel="stylesheet">
     <!--  -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
@@ -23,6 +22,19 @@
     <link href="./css/base.css" rel="stylesheet">
     <link href="./css/cinder.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/highlight.css">
+
+    <link href="./css/perso.css" rel="stylesheet">
+
+    <!-- KC added this js library -->
+    <script src="./js/yaml.min.js"></script>
+    <script src="./js/myjslib.js"></script>
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="./js/leaflet.awesome-markers.min.js"></script>
+    <script src="./js/customzoom.js"></script>
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,12 +53,8 @@
 
     
 
-
-    <!-- KC added -->
-    <script src="./js/yaml.min.js"></script>
-    <script src="./js/myjslib.js"></script>
-
 </head>
+
 
 <body class="homepage" >
 
@@ -147,6 +155,9 @@
         
             <li class="second-level"><a href="#who-are-we">Who are we?</a></li>
             
+        
+            <li class="second-level"><a href="#where-are-we">Where are we?</a></li>
+            
                 <li class="third-level"><a href="#mkdocs">MkDocs</a></li>
             
                 <li class="third-level"><a href="#installation">Installation</a></li>
@@ -169,6 +180,10 @@
 <p>This wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!</p>
 <h2 id="who-are-we">Who are we?</h2>
 <hr />
+<h2 id="where-are-we">Where are we?</h2>
+<hr />
+<div id="map_authors"> </div>
+
 <h3 id="mkdocs">MkDocs</h3>
 <p>The goal was to find an easy tool that can be customized and can work with markdown documents. <a href="http://www.mkdocs.org/">MkDocs</a> provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their <a href="https://github.com/mkdocs/mkdocs/">github repository</a>, so it may be that what I have found unsatisfying thus far has already been addressed.</p>
 <h3 id="installation">Installation</h3>
@@ -235,10 +250,9 @@ you will need to rebuild to website:</p>
     </script>
     <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
     <script src="./js/base.js"></script>
-    <script src="./js/yaml.min.js"></script>
-    <script src="./js/myjslib.js"></script>
     <script src="./js/Rgraphpkg.js"></script>
     <script src="./js/Rnotes.js"></script>
+    <script src="./js/map_authors.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">
@@ -273,5 +287,5 @@ you will need to rebuild to website:</p>
 
 
 MkDocs version : 0.16.1
-Build Date UTC : 2017-01-27 19:20:12
+Build Date UTC : 2017-01-27 23:40:03
 
