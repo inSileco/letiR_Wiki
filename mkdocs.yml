@@ -13,6 +13,8 @@ google_analytics:
 # github.
 extra_javascript:
     - js/yaml.min.js
+    - js/myjslib.js
+    - js/Rgraphpkg.js
     - js/Rnotes.js
 pages:
   - Home: index.md

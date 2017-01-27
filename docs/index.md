@@ -1,6 +1,9 @@
-## leti-R Wiki page
+# leti-R Wiki page
 
 This wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!
+
+
+## Who are we?  
 
 ------
 ### MkDocs
