@@ -1,0 +1,8 @@
+#map_authors {
+  height: 400px;
+  width: 100%;
+  float: center;
+  display: inline-block;
+  background-color:black;
+  margin: 2px 2px 2px 2px;
+ }

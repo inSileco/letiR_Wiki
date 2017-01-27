@@ -12,10 +12,11 @@ google_analytics:
 # There is also an example on the home page with a python script that automates syncs with
 # github.
 extra_javascript:
-    - js/yaml.min.js
-    - js/myjslib.js
     - js/Rgraphpkg.js
     - js/Rnotes.js
+    - js/map_authors.js
+extra_css:
+    - css/perso.css
 pages:
   - Home: index.md
   - R notes:

@@ -15,7 +15,6 @@
 
     <link href="{{ base_url }}/css/bootstrap-custom.min.css" rel="stylesheet">
     <!-- KC: -->
-    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="{{ base_url }}/css/font-awesome.min.css" rel="stylesheet">
     <!--  -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
@@ -25,8 +24,18 @@
     <link href="{{ base_url }}/css/cinder.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ base_url }}/css/highlight.css">{%- for path in extra_css %}
 
-
     <link href="{{ path }}" rel="stylesheet">{%- endfor %}
+
+    <!-- KC added this js library -->
+    <script src="{{ base_url }}/js/yaml.min.js"></script>
+    <script src="{{ base_url }}/js/myjslib.js"></script>
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="{{ base_url }}/js/leaflet.awesome-markers.min.js"></script>
+    <script src="{{ base_url }}/js/customzoom.js"></script>
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -62,12 +71,8 @@
     </script>
     {% endif %}
 
-
-    <!-- KC added -->
-    <script src="{{ base_url }}/js/yaml.min.js"></script>
-    <script src="{{ base_url }}/js/myjslib.js"></script>
-
 </head>
+
 
 <body{% if current_page and current_page.is_homepage %} class="homepage" {% endif %}>
 

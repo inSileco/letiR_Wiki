@@ -4,8 +4,14 @@ This wiki is an attempt at structuring our research efforts in as structure-free
 
 
 ## Who are we?  
-
 ------
+
+## Where are we?
+------
+
+<div id="map_authors"> </div>
+
+
 ### MkDocs
 
 The goal was to find an easy tool that can be customized and can work with markdown documents. [MkDocs](http://www.mkdocs.org/) provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their [github repository](https://github.com/mkdocs/mkdocs/), so it may be that what I have found unsatisfying thus far has already been addressed.
