@@ -12,7 +12,10 @@
     <title>R graph packages - leti-R Wiki</title>
 
     <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- KC: -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!--  -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
@@ -40,6 +43,7 @@
 
     <!-- KC added -->
     <script src="../js/yaml.min.js"></script>
+    <script src="../js/myjslib.js"></script>
 
 </head>
 
@@ -138,32 +142,124 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#reference">Reference</a></li>
+        <li class="first-level active"><a href="#r-packages-to-create-and-edit-plots">R packages to create and edit plots</a></li>
         
-            <li class="second-level"><a href="#tags">Tags</a></li>
+            <li class="second-level"><a href="#why-use-r-to-produce-graphics">Why use R to produce graphics?</a></li>
             
         
-            <li class="second-level"><a href="#notes">Notes</a></li>
+            <li class="second-level"><a href="#documentation">Documentation</a></li>
             
         
-            <li class="second-level"><a href="#citations">Citations</a></li>
-            
+    
+        <li class="first-level "><a href="#list-of-packages">List of packages</a></li>
         
     
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h3 id="reference">Reference</h3>
-<hr />
-<h4 id="tags">Tags</h4>
-<hr />
-<!-- begin tags with '\_' for search option to work on tags only -->
+<h1 id="r-packages-to-create-and-edit-plots">R packages to create and edit plots</h1>
+<h2 id="why-use-r-to-produce-graphics">Why use R to produce graphics?</h2>
+<p>S, R's ancestor, was first designed to be an interactive interface for calling routines from the SCS (Statistical Computing Subroutines) FORTRAN library. It expanded to be a complete programming language dedicated to data manipulation, statistical analysis and data visualization (see <a href="http://www.lcg.unam.mx/~lcollado/R/resources/history_of_S.pdf">A brief History of S</a>). Today's graphical system of R is directly derived from the one of S. When R is installed, you get from it two base packages, <a href="https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/00Index.html">'graphics'</a> and <a href="https://stat.ethz.ch/R-manual/R-devel/library/grid/html/00Index.html">'grid'</a>, which produce graphics that are exported with the <a href="https://stat.ethz.ch/R-manual/R-devel/library/grDevices/html/00Index.html">grDevices</a> package. These packages are very complete and flexible. They allow users to efficiently create graphics that scientists use in their day to day operations, <em>i.e.</em> scatterplots, box plots, histograms, etc. We consider that the 'graphics' package is somewhat more user-friendly than the trickier 'grid' package which offers better facilities to develop new graphical functions (e.g. grid' has been employed to build <a href="https://cran.r-project.org/web/packages/ggplot2">ggplot2</a>). Recently, the <a href="https://journal.r-project.org/archive/2015-1/murrell.pdf">gridGraphics</a> package has been developed to bridge the gap between 'grid' and 'graphics' packages.</p>
+<p>That being said, the advantages are numerous and more can be built in. For instance:</p>
+<ol>
+<li>
+<p>You get all the advantages linked with using R, <em>i.e.</em> it is free, lot of documentation exists, a very large community of users, there are many packages, it is easy to learn.</p>
+</li>
+<li>
+<p>Any kind of graphics a scientist needs has already been implemented by many contributors (see the packages review below). If you find there is room for improvement or that we are mistaken, all information is available to further develop missing plotting functions or correct existing ones.</p>
+</li>
+<li>
+<p>Almost everything is possible. All graphics are fully customizable. Some time is required to learn the works, but it's worth it.</p>
+</li>
+<li>
+<p>Although there may be many good reasons to use software to post-treat graphics R produces in WYSIWYG softwares, we contend that once you master R, you will never do so. When a graphics is done, it is associated with only a few lines of code. Changing solely the lines of code is a much more efficient way more efficient to solve any problem than reproducing and post-treating the graphics. As scientists, it is a victory to only modify a few lines of code when reviewers quibble about a figure.</p>
+</li>
+<li>
+<p>Once a graphics is created, we can export it in many formats: <code>.eps</code>, <code>.jpeg</code>, <code>.pdf</code>, <code>.bmp</code>, <code>.svg</code> with appropriate resolution and size. There is 100% guarantee that you will meet a journal's requirements for figures publication.</p>
+</li>
+</ol>
+<!-- This blog section is dedicated to help you realize these advantages. Examples will be provided with many parameters to ensure you can get exactly what you want (in term of graphics). We wish to show and assist you in making everything possible. Every tool is already available and we made some more accessible through this [graphicsutils](https://github.com/KevCaz/graphicsutils) package available on github.
+ -->
 
-<h4 id="notes">Notes</h4>
-<hr />
-<h4 id="citations">Citations</h4>
-<hr /></div>
+<p><br/></p>
+<h2 id="documentation">Documentation</h2>
+<p>We will make the content below 'evolving' by collecting and indexing as many sources of documentation as possible. Please comment in the Disqus section below to suggest and/or provide your own sources:</p>
+<ul>
+<li>
+<p><strong>Comprehensive R Archive Network</strong> (<a href="https://cran.r-project.org">CRAN</a>)</p>
+<ul>
+<li><a href="https://cran.r-project.org/manuals.html">Manuals</a></li>
+<li><a href="https://cran.r-project.org/other-docs.html">Contributed manuals and cheat sheets</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Journals</strong></p>
+<ul>
+<li><a href="https://journal.r-project.org">R journal</a></li>
+<li><a href="http://www.jstatsoft.org/index">Journal of Statistical Software</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Books</strong>:</p>
+<ul>
+<li><a href="https://www.stat.auckland.ac.nz/~paul/RG2e/index.html">Rgraphics, Second  Edition</a></li>
+<li><a href="http://ms.mcmaster.ca/~bolker/misc/ggplot2-book.pdf">ggplot2</a></li>
+<li><a href="http://www.cookbook-r.com/Graphs/">R Graphics Cookbook</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Blogs</strong>:</p>
+<ul>
+<li><a href="http://www.r-bloggers.com">R-bloggers</a></li>
+<li><a href="http://www.inside-r.org">inside-R</a></li>
+<li><a href="http://www.statmethods.net/about/learningcurve.html">Quick-R</a></li>
+<li><a href="http://blog.revolutionanalytics.com/about.html">Revolutions</a></li>
+<li><a href="http://rgraphgallery.blogspot.ca">R graph gallery</a></li>
+<li><a href="http://www.r-graph-gallery.com">A newer graph gallery</a></li>
+</ul>
+</li>
+</ul>
+<p><br/></p>
+<h1 id="list-of-packages">List of packages</h1>
+<!-- Find package [here](http://rpackages.ianhowson.com) A comprehensive index of R packages and documentation from CRAN, Bioconductor, GitHub and R-Forge. (https://cran.r-project.org/web/packages/available_packages_by_name.html) -->
+
+<p>Many packages for graphics are indexed in a dedicated <a href="https://cran.r-project.org/web/views/Graphics.html">task view maintained by Nicholas Lewin-Koh</a>. We have indexed many of them and refer to more below. For each package, we provide :</p>
+<ul>
+<li>the name of the package with a link that goes to the <a href="https://cran.r-project.org">CRAN</a> repository where the manual and optional vignettes can be found,</li>
+<li>a text summarizing the package content (an adequate part of the description found online),</li>
+</ul>
+<p>when available, we also provide :</p>
+<ul>
+<li><a href=""><i class="fa fa-github"></i></a> : a link that goes to the <a href="https://github.com">Github</a> repository,</li>
+<li><a href=""><i class="fa fa-bitbucket"></i></a> : a link that goes to the associated <a href="https://bitbucket.org">Bitbucket</a> repository,</li>
+<li><a href=""><i class="fa fa-globe"></i></a> : a link that goes to a dedicated website or a html vignette that describes well the package,</li>
+<li><a href=""><i class="fa fa-link"></i></a> : a link that goes to a relevant publication,</li>
+<li><a href=""><i class="fa fa-file-pdf-o"></i></a> : a link that goes to an relevant pdf file (an R journal article for instance).</li>
+</ul>
+<p><div id="Graphpkgs"> </div></p>
+<!-- {% assign pkg_by_cat = site.data.Rpkgs | group_by:"category" | sort:"name" %}
+
+{% for pkg_cat in pkg_by_cat %}
+  <br/>
+  <h3 id="{{pkg_cat.name}}"> {{pkg_cat.name}} </h3>
+  <ul>
+    {% for pkg in pkg_cat.items %}
+      <li>
+        <a href="https://cran.r-project.org/web/packages/{{pkg.namepkg}}/index.html">{{pkg.namepkg}}</a>:   {{pkg.text}}
+        {% if pkg.github %} <a href="https://github.com/{{pkg.github}}"><i class="fa fa-github"></i></a> {% endif %}
+        {% if pkg.bitbuck %} <a href="https://bitbucket.org/{{pkg.bitbuck}}"><i class="fa fa-bitbucket"></i></a> {% endif %}
+        {% if pkg.website %} <a href="{{pkg.website}}"><i class="fa fa-globe"></i></a> {% endif %}
+        {% if pkg.doi %} <a href="https://doi.org/{{pkg.doi}}"><i class="fa fa-link"></i></a> {% endif %}
+        {% if pkg.pdf %}  <a href="{{pkg.pdf}}"><i class="fa fa-file-pdf-o"></i></a> {% endif %}
+
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+
+<br/> --></div>
         
     </div>
 
@@ -185,6 +281,8 @@
     <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
     <script src="../js/base.js"></script>
     <script src="../js/yaml.min.js"></script>
+    <script src="../js/myjslib.js"></script>
+    <script src="../js/Rgraphpkg.js"></script>
     <script src="../js/Rnotes.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">

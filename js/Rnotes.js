@@ -1,23 +1,3 @@
-// The two first functions were found here
-//http://stackoverflow.com/questions/11246758/how-to-get-unique-values-in-an-array
-
-Array.prototype.contains = function(v) {
-  for(var i = 0; i < this.length; i++) {
-      if(this[i] === v) return true;
-  }
-  return false;
-};
-
-Array.prototype.unique = function() {
-  var arr = [];
-  for(var i = 0; i < this.length; i++) {
-      if(!arr.contains(this[i])) {
-          arr.push(this[i]);
-      }
-  }
-  return arr;
-}
-
 var post = YAML.load("../data/Rblogposts.yml");
 var categ = [];
 for (var i=0; i<post.length; i++){
@@ -26,7 +6,7 @@ for (var i=0; i<post.length; i++){
 var ucateg = categ.unique();
 var uscateg = ucateg.sort();
 
-document.getElementById('myDiv').innerHTML += "<br/>"
+document.getElementById('myDiv').innerHTML += "<br/>";
 
 for (var i=0; i<uscateg.length; i++){
   document.getElementById('myDiv').innerHTML += "<h3>"
