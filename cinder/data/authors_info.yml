@@ -10,9 +10,9 @@
     lat: 46.78012
     osmlink: http://www.openstreetmap.org/#map=18/46.78012/-71.27729
 
-
 - given_name: Nicolas
   family_name: Casajus
+  github: https://github.com/ahasverus
   website: http://www.uqar.ca/specialistes/equipe/casajus-nicolas/), Université
   institution:
   - name: Québec à Rimouski
@@ -20,10 +20,11 @@
     country: Canada
     lon: -68.512790
     lat: 48.452900
-    osmlink: http://www.openstreetmap.org/#map=19/48.84202/2.34382
+    osmlink: http://www.openstreetmap.org/#map=17/48.452900/-68.512790
 
 - given_name: Kevin
   family_name: Cazelles
+  github: https://github.com/KevCaz
   website: http://kevincazelles.fr
   institution:
   - name: Université de Montpellier
@@ -43,4 +44,4 @@
     country: Canada
     lon: -71.9282
     lat: 45.3799
-    osmlink: http://www.openstreetmap.org/#map=15/45.3799/-71.9282
+    osmlink: http://www.openstreetmap.org/#map=17/45.3799/-71.9282

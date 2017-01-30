@@ -20,11 +20,24 @@ Array.prototype.unique = function() {
 
 
 //https://coderwall.com/p/_g3x9q/how-to-check-if-javascript-object-is-empty
-
 function isEmpty(obj) {
     for(var key in obj) {
         if(obj.hasOwnProperty(key))
             return false;
     }
     return true;
+}
+
+
+
+// function do add hyperlinks
+function add_hyperlink(arg, arg2) {
+  var out;
+  if (arg == null) {
+    out = "";
+  }
+  else {
+    out = "<a href=" + arg + ">" + arg2 + "<a/>";
+  }
+  return out;
 }
