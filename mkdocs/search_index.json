@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "leti-R Wiki page\n\n\nThis wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!\n\n\nWho are we?\n\n\n\n\nWhere are we?\n\n\n\n\n \n\n\n\nMkDocs\n\n\nThe goal was to find an easy tool that can be customized and can work with markdown documents. \nMkDocs\n provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their \ngithub repository\n, so it may be that what I have found unsatisfying thus far has already been addressed.\n\n\nInstallation\n\n\nFor \nhomebrew\n users:\n\n\nbrew install mkdocs\n\n\n\n\nFor further details, you may visit the \nMkDocs\n website.\n\n\n\n\nTagging in documents\n\n\nThe search function provided by MkDocs does not allow for strict searches (\ne.g.\n \"ggplot2\"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:\n\n\nTags\n\n\n_K\u00e9vin;\n_Steve;\n_Nicolas\n\n\n\n\nUseful commands\n\n\nLocal visualization\n\n\nUse the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000\n\n\nmkdocs serve\n\n\n\n\nDeploying online\n\n\nUse the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet\n\n\nmkdocs gh-deploy --clean\n\n\n\n\nAdding css files / javascript library\n\n\nTo add \n.css\n and  \n.js\n files, follow the steps described \nhere\n. Once done,\nyou will need to rebuild to website:\n\n\nmkdocs build --clean\n\n\n\n\n\n\n\n\n\nUseful links for MkDocs\n\n\nMkDocs\n - Overview and installation\n\n\nsitepoint\n - Building and deploying product documentation with MkDocs\n\n\nEmbedded Log\n- Automatic update of MkDocs from github wiki with python script\n\n\n\n\nUseful links for Markdown\n\n\n\n\n\nMarkdown cheat sheet\n\n\nK\u00e9vin Cazelle's \nrepository\n on R markdown in french.", 
+            "text": "leti-R Wiki page\n\n\nThis wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!\n\n\nWho are we?\n\n\n\n\n \n\n\n\n\n\nWhere are we?", 
             "title": "Home"
         }, 
         {
@@ -21,52 +21,57 @@
             "title": "Where are we?"
         }, 
         {
-            "location": "/#mkdocs", 
+            "location": "/contributing/", 
+            "text": "MkDocs\n\n\nThe goal was to find an easy tool that can be customized and can work with markdown documents. \nMkDocs\n provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their \ngithub repository\n, so it may be that what I have found unsatisfying thus far has already been addressed.\n\n\nInstallation\n\n\nFor \nhomebrew\n users:\n\n\nbrew install mkdocs\n\n\n\n\nFor further details, you may visit the \nMkDocs\n website.\n\n\n\n\nTagging in documents\n\n\nThe search function provided by MkDocs does not allow for strict searches (\ne.g.\n \"ggplot2\"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:\n\n\nTags\n\n\n_K\u00e9vin;\n_Steve;\n_Nicolas\n\n\n\n\nUseful commands\n\n\nLocal visualization\n\n\nUse the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000\n\n\nmkdocs serve\n\n\n\n\nDeploying online\n\n\nUse the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet\n\n\nmkdocs gh-deploy --clean\n\n\n\n\nAdding css files / javascript library\n\n\nTo add \n.css\n and  \n.js\n files, follow the steps described \nhere\n. Once done,\nyou will need to rebuild to website:\n\n\nmkdocs build --clean\n\n\n\n\n\n\n\n\n\nUseful links for MkDocs\n\n\nMkDocs\n - Overview and installation\n\n\nsitepoint\n - Building and deploying product documentation with MkDocs\n\n\nEmbedded Log\n- Automatic update of MkDocs from github wiki with python script\n\n\n\n\nUseful links for Markdown\n\n\n\n\n\nMarkdown cheat sheet\n\n\nK\u00e9vin Cazelle's \nrepository\n on R markdown in french.", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/contributing/#mkdocs", 
             "text": "The goal was to find an easy tool that can be customized and can work with markdown documents.  MkDocs  provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their  github repository , so it may be that what I have found unsatisfying thus far has already been addressed.", 
             "title": "MkDocs"
         }, 
         {
-            "location": "/#installation", 
+            "location": "/contributing/#installation", 
             "text": "For  homebrew  users:  brew install mkdocs  For further details, you may visit the  MkDocs  website.", 
             "title": "Installation"
         }, 
         {
-            "location": "/#tagging-in-documents", 
+            "location": "/contributing/#tagging-in-documents", 
             "text": "The search function provided by MkDocs does not allow for strict searches ( e.g.  \"ggplot2\"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:", 
             "title": "Tagging in documents"
         }, 
         {
-            "location": "/#tags", 
+            "location": "/contributing/#tags", 
             "text": "_K\u00e9vin;\n_Steve;\n_Nicolas", 
             "title": "Tags"
         }, 
         {
-            "location": "/#useful-commands", 
+            "location": "/contributing/#useful-commands", 
             "text": "", 
             "title": "Useful commands"
         }, 
         {
-            "location": "/#local-visualization", 
+            "location": "/contributing/#local-visualization", 
             "text": "Use the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000  mkdocs serve", 
             "title": "Local visualization"
         }, 
         {
-            "location": "/#deploying-online", 
+            "location": "/contributing/#deploying-online", 
             "text": "Use the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet  mkdocs gh-deploy --clean", 
             "title": "Deploying online"
         }, 
         {
-            "location": "/#adding-css-files-javascript-library", 
+            "location": "/contributing/#adding-css-files-javascript-library", 
             "text": "To add  .css  and   .js  files, follow the steps described  here . Once done,\nyou will need to rebuild to website:  mkdocs build --clean", 
             "title": "Adding css files / javascript library"
         }, 
         {
-            "location": "/#useful-links-for-mkdocs", 
+            "location": "/contributing/#useful-links-for-mkdocs", 
             "text": "MkDocs  - Overview and installation  sitepoint  - Building and deploying product documentation with MkDocs  Embedded Log - Automatic update of MkDocs from github wiki with python script", 
             "title": "Useful links for MkDocs"
         }, 
         {
-            "location": "/#useful-links-for-markdown", 
+            "location": "/contributing/#useful-links-for-markdown", 
             "text": "Markdown cheat sheet  K\u00e9vin Cazelle's  repository  on R markdown in french.", 
             "title": "Useful links for Markdown"
         }, 
@@ -104,6 +109,26 @@
             "location": "/Rgraphpkgs/#list-of-packages", 
             "text": "Many packages for graphics are indexed in a dedicated  task view maintained by Nicholas Lewin-Koh . We have indexed many of them and refer to more below. For each package, we provide :   the name of the package with a link that goes to the  CRAN  repository where the manual and optional vignettes can be found,  a text summarizing the package content (an adequate part of the description found online),   when available, we also provide :    : a link that goes to the  Github  repository,   : a link that goes to the associated  Bitbucket  repository,   : a link that goes to a dedicated website or a html vignette that describes well the package,   : a link that goes to a relevant publication,   : a link that goes to an relevant pdf file (an R journal article for instance).", 
             "title": "List of packages"
+        }, 
+        {
+            "location": "/blog/", 
+            "text": "leti-R Blog", 
+            "title": "Blog"
+        }, 
+        {
+            "location": "/blog/#leti-r-blog", 
+            "text": "", 
+            "title": "leti-R Blog"
+        }, 
+        {
+            "location": "/news/", 
+            "text": "leti-R News", 
+            "title": "News"
+        }, 
+        {
+            "location": "/news/#leti-r-news", 
+            "text": "", 
+            "title": "leti-R News"
         }
     ]
 }

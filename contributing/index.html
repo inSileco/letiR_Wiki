@@ -4,31 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Documentation on everything"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="author" content="leti-R"> 
-    <link rel="canonical" href="http://letir.github.io/letir_wiki/"> 
-    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="canonical" href="http://letir.github.io/letir_wiki/contributing/"> 
+    <link rel="shortcut icon" href="../img/favicon.ico">
 
-    <title>leti-R Wiki</title>
+    <title>Contributing - leti-R Wiki</title>
 
-    <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="./css/base.css" rel="stylesheet">
-    <link href="./css/cinder.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/highlight.css">
-    <link href="./css/perso.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link href="../css/perso.css" rel="stylesheet">
 
     <!-- KC added the following -->
-    <link href="./css/font-awesome.min.css" rel="stylesheet">
-    <script src="./js/yaml.min.js"></script>
-    <script src="./js/myjslib.js"></script>
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <script src="../js/yaml.min.js"></script>
+    <script src="../js/myjslib.js"></script>
     <!-- leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-    <script src="./js/customzoom.js"></script>
+    <script src="../js/customzoom.js"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,7 +50,7 @@
 </head>
 
 
-<body class="homepage" >
+<body>
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -69,7 +68,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">leti-R Wiki</a>
+            <a class="navbar-brand" href="..">leti-R Wiki</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -79,19 +78,19 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="active">
-                        <a href=".">Home</a>
+                    <li >
+                        <a href="..">Home</a>
                     </li>
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li >
-    <a href="contributing/">Contributing</a>
+<li class="active">
+    <a href="./">Contributing</a>
 </li>
 
                         
@@ -106,13 +105,13 @@
                         
                             
 <li >
-    <a href="Rnotes/">Useful blog posts</a>
+    <a href="../Rnotes/">Useful blog posts</a>
 </li>
 
                         
                             
 <li >
-    <a href="Rgraphpkgs/">R graph packages</a>
+    <a href="../Rgraphpkgs/">R graph packages</a>
 </li>
 
                         
@@ -122,13 +121,13 @@
                 
                 
                     <li >
-                        <a href="blog/">Blog</a>
+                        <a href="../blog/">Blog</a>
                     </li>
                 
                 
                 
                     <li >
-                        <a href="news/">News</a>
+                        <a href="../news/">News</a>
                     </li>
                 
                 
@@ -142,13 +141,13 @@
                     </a>
                 </li>
                 
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="..">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="contributing/">
+                        <a rel="prev" href="../Rnotes/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -173,31 +172,86 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#leti-r-wiki-page">leti-R Wiki page</a></li>
+        <li class="first-level active"><a href="#mkdocs">MkDocs</a></li>
         
-            <li class="second-level"><a href="#who-are-we">Who are we?</a></li>
+    
+        <li class="first-level "><a href="#installation">Installation</a></li>
+        
+    
+        <li class="first-level "><a href="#tagging-in-documents">Tagging in documents</a></li>
+        
+            <li class="second-level"><a href="#tags">Tags</a></li>
             
         
-            <li class="second-level"><a href="#where-are-we">Where are we?</a></li>
+    
+        <li class="first-level "><a href="#useful-commands">Useful commands</a></li>
+        
+            <li class="second-level"><a href="#local-visualization">Local visualization</a></li>
             
+        
+            <li class="second-level"><a href="#deploying-online">Deploying online</a></li>
+            
+        
+            <li class="second-level"><a href="#adding-css-files-javascript-library">Adding css files / javascript library</a></li>
+            
+        
+    
+        <li class="first-level "><a href="#useful-links-for-mkdocs">Useful links for MkDocs</a></li>
+        
+    
+        <li class="first-level "><a href="#useful-links-for-markdown">Useful links for Markdown</a></li>
         
     
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="leti-r-wiki-page">leti-R Wiki page</h1>
-<p>This wiki is an attempt at structuring our research efforts in as structure-free an environment as possible!</p>
-<h2 id="who-are-we">Who are we?</h2>
-<hr />
-<div id="pres_authors"> </div>
+<h3 id="mkdocs">MkDocs</h3>
+<p>The goal was to find an easy tool that can be customized and can work with markdown documents. <a href="http://www.mkdocs.org/">MkDocs</a> provides these features. MkDocs works quite simply by using a .yaml file for configuration, and a folder of .md files to create pages for the wiki. It's  highly customizable and seems like a good candidate to address our needs. I also have not gone through the whole documentation or their <a href="https://github.com/mkdocs/mkdocs/">github repository</a>, so it may be that what I have found unsatisfying thus far has already been addressed.</p>
+<h3 id="installation">Installation</h3>
+<p>For <a href="../brew install mkdocs">homebrew</a> users:</p>
+<pre><code class="bash">brew install mkdocs
+</code></pre>
 
-<p><br/></p>
-<h2 id="where-are-we">Where are we?</h2>
+<p>For further details, you may visit the <a href="http://www.mkdocs.org/">MkDocs</a> website.</p>
 <hr />
-<div id="map_authors"> </div>
+<h3 id="tagging-in-documents">Tagging in documents</h3>
+<p>The search function provided by MkDocs does not allow for strict searches (<em>e.g.</em> "ggplot2"). I therefore suggest adding a tags section for each document to facilitate indexation and search through the wiki, with all tags preceded by '_' (# doesn't work). It would give something like this:</p>
+<h4 id="tags">Tags</h4>
+<p>_Kévin;
+_Steve;
+_Nicolas</p>
+<hr />
+<h3 id="useful-commands">Useful commands</h3>
+<h4 id="local-visualization">Local visualization</h4>
+<p>Use the following command to visualize the wiki locally at the following address in your web browser: http://127.0.0.1:8000</p>
+<pre><code class="bash">mkdocs serve
+</code></pre>
 
-<p><br/></p></div>
+<h4 id="deploying-online">Deploying online</h4>
+<p>Use the following command to push modifications to gh-pages branch after modifications to the wiki have been markdown-cheatsheet</p>
+<pre><code class="bash">mkdocs gh-deploy --clean
+</code></pre>
+
+<h4 id="adding-css-files-javascript-library">Adding css files / javascript library</h4>
+<p>To add <code>.css</code> and  <code>.js</code> files, follow the steps described <a href="http://www.mkdocs.org/user-guide/styling-your-docs/">here</a>. Once done,
+you will need to rebuild to website:</p>
+<pre><code class="bash">mkdocs build --clean
+</code></pre>
+
+<!-- https://www.npmjs.com/package/yamljs -->
+
+<hr />
+<h3 id="useful-links-for-mkdocs">Useful links for MkDocs</h3>
+<p><a href="http://www.mkdocs.org/">MkDocs</a> - Overview and installation</p>
+<p><a href="https://www.sitepoint.com/building-product-documentation-mkdocs/">sitepoint</a> - Building and deploying product documentation with MkDocs</p>
+<p><a href="http://www.embeddedlog.com/static-docs-from-github-wiki.html">Embedded Log</a>- Automatic update of MkDocs from github wiki with python script</p>
+<hr />
+<h3 id="useful-links-for-markdown">Useful links for Markdown</h3>
+<!-- That's mostly for David! -->
+
+<p><a href="https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf">Markdown cheat sheet</a></p>
+<p>Kévin Cazelle's <a href="https://github.com/KevCaz/Rmarkdowndocfr">repository</a> on R markdown in french.</p></div>
         
     </div>
 
@@ -209,19 +263,19 @@
         <small>Website built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
     </footer>
 
-    <script src="./js/jquery-1.10.2.min.js"></script>
-    <script src="./js/bootstrap-3.0.3.min.js"></script>
-    <script src="./js/highlight.pack.js"></script>
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script>
-    var base_url = '.';
+    var base_url = '..';
     </script>
-    <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-    <script src="./js/base.js"></script>
-    <script src="./js/Rgraphpkg.js"></script>
-    <script src="./js/Rnotes.js"></script>
-    <script src="./js/map_authors.js"></script>
-    <script src="./js/pres_authors.js"></script>
+    <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/Rgraphpkg.js"></script>
+    <script src="../js/Rnotes.js"></script>
+    <script src="../js/map_authors.js"></script>
+    <script src="../js/pres_authors.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">
@@ -253,8 +307,3 @@
     </body>
 
 </html>
-
-
-MkDocs version : 0.16.1
-Build Date UTC : 2017-01-30 13:38:38
-

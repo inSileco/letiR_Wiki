@@ -12,6 +12,16 @@
     
         
     <url>
+     <loc>http://letir.github.io/letir_wiki//contributing/</loc>
+     <lastmod>2017-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
      <loc>http://letir.github.io/letir_wiki//Rnotes/</loc>
      <lastmod>2017-01-30</lastmod>
      <changefreq>daily</changefreq>
@@ -23,6 +33,22 @@
      <changefreq>daily</changefreq>
     </url>
         
+    
+
+    
+    <url>
+     <loc>http://letir.github.io/letir_wiki//blog/</loc>
+     <lastmod>2017-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://letir.github.io/letir_wiki//news/</loc>
+     <lastmod>2017-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
     
 
 </urlset>
