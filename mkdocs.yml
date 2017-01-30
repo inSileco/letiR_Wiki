@@ -15,10 +15,15 @@ extra_javascript:
     - js/Rgraphpkg.js
     - js/Rnotes.js
     - js/map_authors.js
+    - js/pres_authors.js
 extra_css:
     - css/perso.css
 pages:
   - Home: index.md
+  - About:
+      - Contributing: contributing.md
   - R notes:
       - Useful blog posts: Rnotes.md
       - R graph packages: Rgraphpkgs.md
+  - Blog: blog.md
+  - News: news.md

@@ -1,5 +1,5 @@
-// Script to creat a map of to locate ourselves
-// KC: 30/01/2017
+// Script to create a map to locate ourselves
+// last edit KC: 30/01/2017
 
 collabo = YAML.load("../data/authors_info.yml");
 //
@@ -17,9 +17,7 @@ var zoomHomec = new L.Control.zoomHome([47, -32], 3);
 zoomHomec.addTo(mymapc);
 
 
-// NB: you cam use your own icon: http://leafletjs.com/examples/custom-icons/
-//
-//
+// NB: you can use your own icon: http://leafletjs.com/examples/custom-icons/
 for (var i=0; i<collabo.length; i++){
   for (var j=0; j<collabo[i].institution.length; j++){
     var lat=collabo[i].institution[j].lat;

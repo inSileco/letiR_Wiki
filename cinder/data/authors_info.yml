@@ -1,7 +1,8 @@
 - given_name: David
   family_name: Beauchesne
-  website:
+  website: https://letir.github.io/letiR_Wiki/
   github: https://github.com/david-beauchesne
+  description: "to be done"
   institution:
   - name: Université de Laval
     city: Québec
@@ -14,6 +15,7 @@
   family_name: Casajus
   github: https://github.com/ahasverus
   website: http://www.uqar.ca/specialistes/equipe/casajus-nicolas/), Université
+  description: "to be done"
   institution:
   - name: Québec à Rimouski
     city: Rimouski
@@ -24,6 +26,7 @@
 
 - given_name: Kevin
   family_name: Cazelles
+  description: "PhD in Ecology and evolution, my research regard the consequence of species interaction in species distribution models."
   github: https://github.com/KevCaz
   website: http://kevincazelles.fr
   institution:
@@ -36,6 +39,7 @@
 
 - given_name: Steve
   family_name: Vissault
+  description: "to be done"
   website: http://steveviss.github.io
   github: https://github.com/SteveViss
   institution:
