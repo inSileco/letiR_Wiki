@@ -122,13 +122,23 @@
         }, 
         {
             "location": "/news/", 
-            "text": "leti-R News", 
+            "text": "leti-R News\n\n\nTests\n\n\nAjouter un iframe", 
             "title": "News"
         }, 
         {
             "location": "/news/#leti-r-news", 
             "text": "", 
             "title": "leti-R News"
+        }, 
+        {
+            "location": "/news/#tests", 
+            "text": "", 
+            "title": "Tests"
+        }, 
+        {
+            "location": "/news/#ajouter-un-iframe", 
+            "text": "", 
+            "title": "Ajouter un iframe"
         }
     ]
 }
